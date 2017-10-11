@@ -1,0 +1,49 @@
+@import "layout";
+@import "tabs";
+@import "sprite";
+@import "social";
+
+
+
+.round-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: white;
+  }
+}
+
+.s-static-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    box-sizing: border-box;
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    background: orange;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
